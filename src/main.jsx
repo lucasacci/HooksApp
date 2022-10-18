@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom/client'
 import { MultipleCustomHooks } from './examples/MultipleCustomHooks'
 import { HooksApp } from './HooksApp'
 import './index.css'
+import { MemoHook } from './memos/MemoHook'
+import { Memorize } from './memos/Memorize'
 import { FormWithCustomHook } from './useEffect/FormWithCustomHook'
 import { SimpleForm } from './useEffect/SimpleForm'
 import { Layout } from './useLayoutEffect/Layout'
@@ -12,6 +14,6 @@ import { CounterCustomHook } from './useState/CounterCustomHook'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   // <React.StrictMode>
-    <Layout/>
+    <MemoHook/>
   // </React.StrictMode>
 )
